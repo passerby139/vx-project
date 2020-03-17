@@ -1,0 +1,5 @@
+/* pages/index2/index2.wxss */
+.items{
+  border: 1px solid #333;
+  background-color: #262194
+}

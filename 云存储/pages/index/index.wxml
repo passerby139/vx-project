@@ -1,0 +1,3 @@
+<button type="primary" bindtap="upimage">上传图片</button>
+<image src="{{imageURL}}"></image>
+<button type="primary" bindtap="upvideo">上传视频</button>

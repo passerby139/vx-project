@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<view class="container">
+  <button type="default" bindtap="API">通过API获取数据</button>
+  <button type="default" bindtap="yun">通过云函数获取数据</button>
+  
+
+  <button type="primary" bindtap="addjia"> 加法计算</button>
+  <button type="warn" bindtap="open">获取openid</button>
+</view>

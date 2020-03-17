@@ -1,0 +1,9 @@
+<button type="primary" bindtap="get">获取数据库信息</button>
+<view wx:for="{{datalist}}" wx:key="item">
+  <view class="items">
+    <view>{{item.name}}</view>
+    <view>{{item.num}}</view>
+    <view>{{item.inhome}}</view>
+    <view>{{item.cla}}</view>
+  </view>
+</view>
