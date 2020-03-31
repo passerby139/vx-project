@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "tabber": "../../component/tabber/index",
+    "van-cell": "dist/cell/index",
+    "van-cell-group": "dist/cell-group/index",
+    "van-icon": "dist/icon/index",
+    "van-divider": "dist/divider/index"
+  },
+  "navigationBarTitleText": "我的信息"
+}

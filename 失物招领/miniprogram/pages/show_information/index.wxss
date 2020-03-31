@@ -1,0 +1,58 @@
+/* pages/show_information/index.wxss */
+page {
+  position: relative
+}
+.top_banner {
+  width: 98%;
+  height: 200rpx;
+  margin-left: 8rpx;
+  display: flex;
+  overflow: hidden;
+  flex-direction: row;
+  align-items: center;
+  border-bottom:  1px solid rgb(233, 231, 231);
+}
+.top_banner image {
+  width: 150rpx;
+  height: 150rpx;
+  margin-left: 15rpx;
+  border-radius: 80rpx;
+  margin-right:25rpx 
+}
+.top_banner text {
+  margin-top: 35rpx;
+  font-weight: 700
+}
+.body {
+  margin-top: 50rpx;
+}
+.user,.studet,.publish {
+  width: 94%;
+  padding-left:45rpx;
+  display: flex;
+  flex-direction: row
+}
+.cell {
+  flex: 8;
+  margin-left:-35rpx; 
+  padding-right:20rpx;
+}
+.feedback {
+  height: 100rpx;
+  width: 100%;
+  bottom:60rpx;
+  border-top: 1px solid rgb(233, 231, 231);
+  display: flex;
+  justify-content: center;
+  color: #9cf;
+  font-size: 25rpx;
+  position: fixed;
+}
+.feedback text {
+  width: 100rpx;
+  height: 25rpx;
+  padding-left: 5rpx;
+  background-color: #fff;
+  position: fixed;
+  bottom:150rpx;
+}

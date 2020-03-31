@@ -1,0 +1,30 @@
+
+<view class='container'>
+  <view class='top'>
+    <view class='text'>您的反馈意见是：</view>
+    <view class="radio">
+      <radio-group class="position item-right radio-group" bindchange="changeSex">
+        <label class="radio" wx:for="{{items}}">
+          <radio value="{{item.name}}" checked="{{item.checked}}" />{{item.name}}
+        </label>
+      </radio-group>
+    </view>
+    <view class="suggestion">
+        <view class="text_sug">意见反馈：</view>
+    <textarea bindinput='change_value' placeholder-style=' margin-left:20rpx;' placeholder='我们将为您不断改进'></textarea>
+  </view>
+    </view>
+
+  <view class='bottom'>
+  <view class='email_box'>
+  <view class="email">邮箱（选填）：</view>
+  <input  style='width:500rpx;' placeholder='以便我们给您回复'></input>
+  </view>
+
+  <view class='other_box'>
+  <view class="other">其它（选填）：</view>
+  <input style='width:500rpx;' placeholder='其它联系方式（QQ号手机号）'></input>
+  </view>
+  </view>
+   <button bindtap='send'  form-type='submit' class="centerPage-save-btn" role="" aria-label="">提交反馈</button>
+</view>

@@ -1,0 +1,11 @@
+<!--商品信息开始-->
+<view>
+  <navigator wx:for="{{detail}}" wx:key="{{item.id}}">
+    <van-card tag="{{item.logo}}" desc="{{item.desc}}" title="{{item.title}}" thumb="{{item.src}}">
+      <view slot="footer">
+        <van-button size="mini" color="#9cf">完成</van-button>
+        <van-button size="mini" bindtap="">分享</van-button>
+      </view>
+    </van-card>
+  </navigator>
+</view>

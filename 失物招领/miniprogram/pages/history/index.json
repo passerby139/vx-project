@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "van-card": "dist/card/index",
+    "van-button": "dist/button/index",
+    "van-image": "dist/image/index"
+  },
+  "navigationBarTitleText": "我的发布"
+}

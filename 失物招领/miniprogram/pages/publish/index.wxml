@@ -1,0 +1,82 @@
+<!--详细信息栏开始-->
+<view class="information">
+  <form>
+    <!--分割线开始-->
+    <view bindtap="hidden">
+      <van-divider contentPosition="center" textColor="#9cf">是否开启详细信息栏目
+        <van-icon name="arrow-down" /></van-divider>
+    </view>
+
+    <view class="choice" wx:if="{{choice}}">
+      <!--时间开始-->
+      <view class="time">
+        <label>丢失/捡到时间:</label>
+        <input type="text" placeholder="请填入丢失/捡到时间" name='time'></input>
+      </view>
+      <!--地点开始-->
+      <view class="address">
+        <label>丢失/捡到地点:</label>
+        <input type="text" placeholder="请填入丢失/捡到地点" name='address'></input>
+      </view>
+      <!--失主姓名开始-->
+      <view class="name">
+        <label>失主姓名:</label>
+        <input type="text" placeholder="请填入失主姓名" name='name'></input>
+      </view>
+      <!--失主学号开始-->
+      <view class="id">
+        <label>失主学号:</label>
+        <input type="text" placeholder="请填入失主学号" name='id'></input>
+      </view>
+      <!--失主学院开始-->
+      <view class="academy">
+        <label>失主学院:</label>
+        <input type="text" placeholder="请填入失主学院" name='academy'></input>
+      </view>
+    </view>
+    <!--物品名称开始-->
+    <view class="goods" style="border-bottom: 1px solid rgb(238, 238, 238) !important;height:85rpx !important;">
+      <label>物品名称:
+        <text>*</text>
+      </label>
+      <input type="text" placeholder="请填入物品名称" name='goods' style="padding-left:220rpx !important;"></input>
+    </view>
+    <!--丢失/拾到开始-->
+    <view class="DIU">
+      <label>丢失/拾到:
+        <text>*</text>
+      </label>
+      <van-radio-group name='sex' value="{{ radio }}" bind:change="onChangeDIU" class="checkDIU">
+        <van-radio name="1" class="check_in" checked-color="#9cf" icon-size="30rpx">丢失</van-radio>
+        <van-radio name="0" class="check_in" checked-color="#9cf" icon-size="30rpx">拾到</van-radio>
+      </van-radio-group>
+    </view>
+    <!--分类开始-->
+    <view class="checkbox" style="margin-bottom:90rpx;">
+      <label>分类:
+        <text>*</text>
+      </label>
+      <van-radio-group value="{{ result }}" bind:change="onChangeFEN" checked-color="#9cf" class="check">
+        <van-radio name="a" class="check_in" icon-size="30rpx" checked-color="#9cf">饭卡</van-radio>
+        <van-radio name="b" class="check_in" icon-size="30rpx" checked-color="#9cf">钥匙</van-radio>
+        <van-radio name="c" class="check_in" icon-size="30rpx" checked-color="#9cf">书</van-radio>
+        <van-radio name="d" class="check_in" icon-size="30rpx" checked-color="#9cf">衣物</van-radio>
+        <van-radio name="e" class="check_in" icon-size="30rpx" checked-color="#9cf">雨伞</van-radio>
+        <van-radio name="f" class="check_in" icon-size="30rpx" checked-color="#9cf">其它</van-radio>
+      </van-radio-group>
+    </view>
+    <!--详细信息描述开始-->
+    <view class="other">
+      <label>详细信息描述:
+        <text>*</text>
+      </label>
+      <textarea placeholder='（请填写详细信息描述信息)'></textarea>
+    </view>
+    <!--图片开始-->
+    <!--提交开始-->
+    <view class="fabu_button">
+      <button type="primary" form-type="submit">提 交</button>
+    </view>
+  </form>
+</view>
+<!--详细信息栏结束-->

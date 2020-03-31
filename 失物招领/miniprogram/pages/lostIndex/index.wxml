@@ -1,0 +1,32 @@
+<!--顶部搜索开始-->
+<van-search value="{{ value }}" input-align="center" placeholder="请输入搜索关键词" />
+<!--顶部搜索结束-->
+
+<!--顶部分类开始-->
+  <van-dropdown-menu active-color="#9cf">
+    <van-dropdown-item value="{{ value1 }}" options="{{ option1 }}" />
+    <van-dropdown-item value="{{ value2 }}" options="{{ option2 }}" />
+  </van-dropdown-menu>
+<!--顶部分类结束-->
+<!--主页面图片开始-->
+<view class="body">
+  <navigator class="informations" url="/pages/detail/index" open-type="navigate" wx:for="{{goods}}">
+    <image mode="scaleToFill" src="{{item.src}}"></image>
+    <label><van-icon name="manager" color="#9cf"/>{{item.name}}</label>
+    <text>{{item.detail}}</text>
+  </navigator>
+</view>
+
+<!--主页面图片结束-->
+
+<!--发布物品按钮开始-->
+<view class="fabu_button">
+  <van-button color="#99CCFF" class="bottombutton" bindtap="toPublish">发 布 物 品 </van-button>
+</view>
+<!--发布物品按钮结束-->
+
+<!--底部导航栏开始-->
+<view class="bottom_tabber">
+  <tabber></tabber>
+</view>
+<!--底部导航栏结束-->

@@ -1,0 +1,41 @@
+<!--pages/modifi_informations/index.wxml-->
+<!--个人信息开始-->
+<view class="information">
+  <form bindsubmit="information">
+    <!--个人头像开始-->
+    <view class='zhaopian' bindtap="chooseImage">
+      <image src='{{image}}' mode="scaleToFill"></image>
+    </view>
+    <!--个人姓名开始-->
+    <view class="name" style="margin-top: 50rpx;">
+      <label>姓名:</label>
+      <input type="text" placeholder="请填入您的姓名" name='name'></input>
+    </view>
+    <!--个人性别开始-->
+    <view class="sex">
+      <label>性别:</label>
+      <van-radio-group  name='sex' value="{{ radio }}" bind:change="onChange" class="Radio">
+        <van-radio name="1" class="sex_infor" checked-color="#9cf" icon-size="30rpx">男</van-radio>
+        <van-radio name="0" class="sex_infor" checked-color="#9cf" style="margin-left:20rpx;" icon-size="230rpx">女</van-radio>
+      </van-radio-group>
+    </view>
+    <!--个人年龄开始-->
+    <view class="age">
+      <label>年龄:</label>
+      <input type="text" placeholder="请填入您的年龄" name='age'></input>
+    </view>
+    <!--个人手机号开始-->
+    <view class="phone">
+      <label>手机号:</label>
+      <button type="primary" size="mini"open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber"> 获 取</button>
+    </view>
+    <!--信息提交按钮开始-->
+    <view class="fabu_button">
+      <button type="primary" form-type="submit">提 交</button>
+    </view>
+  </form>
+</view>
+<!--个人信息结束-->
+
+<!--
+      <van-button color="#99CCFF" class="bottombutton">提 交</van-button>-->

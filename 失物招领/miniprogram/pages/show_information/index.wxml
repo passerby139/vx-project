@@ -1,0 +1,35 @@
+<!--顶部信息开始-->
+<view class="top_banner">
+  <image src="../../image/21.jpeg" mode="scaleToFill"></image>
+  <text>我叫翟虾虾</text>
+</view>
+<!--顶部信息结束-->
+<!--顶部信息开始-->
+<view class="body">
+  <!--个人信息-->
+  <view class="user">
+    <van-cell is-link title="个人信息" link-type="navigateTo" url="/pages/modifi_informations/index" class="cell"  icon="user-o" >
+    <van-icon name="fail" color="red" size="40rpx" style="margin-left:-15rpx !important;"/>
+    </van-cell>
+  </view>
+  <!--学生认证-->
+  <view class="studet">
+    <van-cell is-link title="学生认证" link-type="navigateTo" url="/pages/authentication/index" class="cell" icon="sign">
+    <van-icon name="fail" color="red" size="40rpx" style="margin-left:-15rpx !important;"/>
+    </van-cell>
+  </view>
+  <!--我发布的-->
+  <view class="publish">
+    <van-cell is-link title="我发布的" link-type="navigateTo" url="/pages/history/index" class="cell"  icon="bar-chart-o"/>
+  </view>
+</view>
+<!--顶部信息结束-->
+<!--用户反馈-->
+<view class="feedback" bindtap="feedback">
+  <text>用户反馈</text>
+</view>
+<!--底部导航栏开始-->
+<view class="bottom_tabber">
+  <tabber></tabber>
+</view>
+<!--底部导航栏结束-->

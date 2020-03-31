@@ -1,0 +1,111 @@
+
+
+.container {
+  font-size: 32rpx;
+  color: #555555;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 750rpx;
+  background-color: #f4f4f4;
+  align-items: center;
+}
+
+.top {
+  margin-top: -145rpx;
+  height: 500rpx;
+  background-color: white;
+  width: 100%;
+  border-width: 0 0 1rpx 0;
+  border-style: solid;
+  border-color: #c4c4c4;
+}
+
+.text {
+  margin-bottom: 38rpx;
+  margin-top: 18rpx;
+  margin-left: 36rpx;
+}
+
+.text_sug {
+  margin-bottom: 16rpx;
+  margin-top: 18rpx;
+  margin-left: 36rpx;
+}
+
+.radio .wx-radio-input.wx-radio-input-checked::before {
+  border-radius: 50%;
+  width: 50rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  font-size: 38rpx; /* 对勾大小 26rpx */
+  color: #fff; /* 对勾颜色 */
+  background: #2facff;
+  border-color: #2facff;
+}
+
+radio {
+  width: 46rpx;
+}
+
+radio .wx-radio-input {
+  border-radius: 50%;
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.position {
+  width: 100%;
+  border-style: solid;
+  border-width: 0 0 1rpx 0;
+  border-color: #c4c4c4;
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+textarea{
+  padding-left:34rpx;
+  width: 700rpx;
+  height: 184rpx;
+}
+
+.bottom{
+  display: flex;
+  flex-direction: column;
+  margin-top: 34rpx;
+  height: 200rpx;
+  background-color: white;
+  justify-content: space-between;
+}
+
+.email_box,.other_box{
+  width: 700rpx;
+  font-size: 32rpx;
+  border-width: 0 0 1rpx 0;
+  border-style: solid;
+  border-color: #c4c4c4;
+  padding:20rpx 20rpx 0 30rpx;
+  height: 82rpx;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.email,.other{
+  width: 40%;
+  height: 70rpx;
+}
+
+.centerPage-save-btn,button {
+  width: 600rpx;
+  border-radius: 20rpx;
+  margin: 40rpx 50rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  background-color: #9cf;
+  color: #fff;
+  text-align: center;
+  font-size:35rpx 
+}

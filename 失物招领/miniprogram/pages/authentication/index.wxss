@@ -1,0 +1,25 @@
+page {
+  background-color: #f4f4f4;
+}
+.body{
+  position: fixed;
+  top: 150rpx;
+  width: 96% !important;
+  margin-left: 15rpx;
+  height: 80vw;
+  background-color: #fff;
+  border-radius: 20rpx
+}
+.fabu_button button {
+  border: none !important;
+  background-color: #99ccff !important;
+  width: 60% !important;
+  margin-left: 130rpx !important;
+  position: absolute !important;
+  bottom: -70rpx !important;
+  border-radius: 20rpx !important;
+  color: #fff !important;
+  font-size: 35rpx !important;
+  font-weight: 700 !important;
+  margin-bottom: 30rpx !important;
+}

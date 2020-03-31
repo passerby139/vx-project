@@ -1,0 +1,173 @@
+page {
+  position: relative
+}
+.top_banner {
+  width: 100%;
+  height: 20vw;
+  display: flex;
+  overflow: hidden;
+  flex-direction: row;
+  align-items: center;
+  border-bottom:  1px solid rgb(233, 231, 231);
+  background-color: #F4F4F4;
+}
+.top_banner image {
+  width: 100rpx;
+  height: 100rpx;
+  margin-left: 15rpx;
+  border-radius: 80rpx;
+  margin-right:25rpx 
+}
+.top_banner text {
+  margin-top: 35rpx;
+  font-weight: 700
+}
+.biaoqian {
+  background-color: #9cf;
+  margin-top: 0 !important;
+  font-size: 30rpx;
+  height: 50rpx;
+  width: 50rpx;
+  text-align: center;
+  line-height: 50rpx;
+  color: #fff;
+  border-radius: 80rpx;
+  position: absolute;
+  right: 30rpx;
+}
+.swiperimg {
+  overflow: hidden !important;
+  width: 96%;
+  height: 40vw;
+  text-align: center;
+  margin-left: 2%;
+  border-top-right-radius: 20rpx;
+  border-top-left-radius: 20rpx ;
+  border: 1px solid #ccc;
+}
+
+.swiperimg image {
+  width: 90%;
+  border-radius: 15rpx
+}
+.options {
+  width: 150rpx;
+  height: 150rpx;
+  border-top-right-radius: 20rpx;
+  border-bottom-right-radius: 20rpx;
+  border-left: rgb(223, 222, 222);
+  position: fixed;
+  background-color: #fff;
+  left:16rpx;
+  top: 500rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 25rpx;
+}
+.information {
+  width: 96%;
+  margin-left: 2%;
+  background-color: rgb(235, 231, 231);
+  margin-bottom: 50rpx;
+  border: 1px solid rgb(223, 222, 222);
+  border-bottom-right-radius: 20rpx;
+  border-bottom-left-radius: 20rpx;
+  overflow: hidden
+}
+.information .detail {
+  display: flex;
+  flex-direction: column;
+  font-size: 25rpx;
+  color: #969799;
+  padding-left: 3%;
+}
+.time,.locate,.name,.id,.academy {
+  width: 60%;
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between
+}
+.img_show {
+  width: 96%;
+  padding-left:16rpx; 
+  overflow: hidden
+}
+.img_show image {
+  width: 100%
+}
+.user_option {
+  display: flex;
+  flex-direction: column;
+}
+.user_option .infor {
+  width: 96%;
+  margin-left:2%; 
+  display: flex;
+  flex-direction: row;
+  margin-top: 20rpx;
+  background-color: rgb(250, 247, 247);
+  border-radius: 20rpx;
+}
+.user_option .infor image {
+  height: 50rpx;
+  width: 50rpx;
+  margin-left: 15rpx;
+  border-radius: 80rpx;
+  flex: 1;
+  margin-right:15rpx 
+}
+.infor .name_time {
+  flex: 13;
+  display: flex;
+  flex-direction: column;
+  font-size: 25rpx;
+}
+.other {
+  height: 35vw;
+  width: 96%;
+  margin-left: 2%
+}
+.other textarea{
+  width:90%;
+  border: 1px solid rgb(238, 238, 238);
+  border-radius: 20rpx;
+  padding-left: 15rpx !important;
+  margin-top: 15rpx;
+  margin-left: 15rpx;
+  height: 200rpx !important;
+  margin-bottom: 10rpx;
+  font-size: 25rpx
+}
+.pinlun {
+  width: 98%;
+  height: 50rpx
+}
+.pinlun button{
+  background-color: #9cf !important;
+  position: absolute !important;
+  right: 20rpx !important;
+  font-weight: 700 !important;
+  color: #fff !important;
+}
+.tip {
+  margin-top: 50rpx;
+  height: 100rpx;
+  width: 100%;
+  bottom:60rpx;
+  border-top: 1px solid rgb(233, 231, 231);
+  display: flex;
+  justify-content: center;
+  color: #9cf;
+  font-size: 20rpx;
+}
+.tip text {
+  width: 160rpx;
+  height: 30rpx;
+  padding-left: 18rpx;
+  background-color: #fff;
+  position: absolute;
+  bottom:85rpx;
+}

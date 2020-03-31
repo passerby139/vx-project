@@ -1,0 +1,88 @@
+/* pages/modifi_informations/index.wxss */
+page {
+  background-color: #F4F4F4;
+}
+.information {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.information form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding-bottom: 250rpx;
+  padding-top: 50rpx;
+  position: fixed;
+  top: 150rpx;
+  position: relative;
+  margin-bottom: 300rpx
+}
+.zhaopian {
+  width: 150rpx;
+  height: 150rpx;
+  overflow: hidden;
+  border-radius: 80rpx;
+  position: absolute;
+  top:-75rpx;
+  left: 40%;
+}
+.zhaopian image {
+  width: 20vw;
+  height: 20vw;
+}
+.name,.sex,.age,.phone {
+  width: 92%;
+  margin-left: 35rpx;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid rgb(240, 239, 239);
+  align-items: center;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.sex_infor {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: 40rpx
+}
+.information label {
+  flex: 2;
+  font-size: 30rpx;
+}
+.information input,.Radio {
+  flex: 5;
+  font-size: 25rpx !important;
+  padding-left: 335rpx;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center
+}
+.phone button {
+  background-color: #9cf !important;
+}
+.information button {
+  margin-right: 10rpx;
+}
+.fabu_button button {
+  border: none !important;
+  background-color: #99ccff !important;
+  position: absolute !important;
+  width: 60% !important;
+  bottom: -45rpx !important;
+  margin-left: 160rpx !important;
+  border-radius: 20rpx !important;
+  color: #fff !important;
+  font-size: 35rpx !important;
+  font-weight: 700 !important;
+}
+.Radio {
+  display: flex !important;
+  flex-direction: row !important;
+  font-size: 30rpx !important;
+}

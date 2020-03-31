@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "van-tag": "dist/tag/index",
+    "van-panel": "dist/panel/index",
+    "van-icon": "dist/icon/index"
+    },
+    "navigationBarTitleText": "物品详情"
+}

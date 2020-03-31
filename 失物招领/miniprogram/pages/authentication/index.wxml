@@ -1,0 +1,15 @@
+<view class="body">
+  <form>
+    <van-cell-group>
+      <van-field value="{{ username3 }}" label="姓名" placeholder="*请输入姓名" input-align="right" icon="star-o"/>
+      <van-field value="{{ username3 }}" label="学校" placeholder="*请输入学校" input-align="right" icon="smile-o"/>
+      <van-field value="{{ username3 }}" label="学院" placeholder="*请输入学院" input-align="right" icon="records"/>
+      <van-field value="{{ username3 }}" label="专业" placeholder="*请输入专业" input-align="right" icon="flag-o"/>
+      <van-field value="{{ username3 }}" label="学号" placeholder="*请输入学号" input-align="right" icon="award-o"/>
+    </van-cell-group>
+     <!--提交开始-->
+    <view class="fabu_button">
+      <button type="primary" form-type="submit">提 交</button>
+    </view>
+  </form>
+</view>

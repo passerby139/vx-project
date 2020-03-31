@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "van-field": "dist/field/index"},
+  "navigationBarTitleText": "学生认证"
+}

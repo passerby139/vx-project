@@ -1,0 +1,84 @@
+<!--顶部信息开始-->
+<view class="top_banner">
+  <image src="../../image/22.jpeg" mode="scaleToFill"></image>
+  <text>我叫翟虾虾</text>
+  <text class="biaoqian" wx:if="{{!biaoqian}}">拾</text>
+  <text class="biaoqian" wx:if="{{biaoqian}}">丢</text>
+</view>
+<!--顶部信息结束-->
+<!-->轮播图版块开始-->
+<view class="swiperimg">
+  <swiper autoplay indicator-dots circular interval="2500">
+    <swiper-item wx:for="{{swiperlist}}">
+      <image src="{{item.image_src}}" mode="aspectFit"></image>
+    </swiper-item>
+  </swiper>
+</view>
+<!-->轮播图版块结束-->
+<!-->评论开始-->
+<!--
+<view class="options" wx:if="{{option}}">
+  <van-icon name="chat-o" info="99+" size="30px" color="#9cf" />
+  <label>评论数</label>
+</view>-->
+<!-->评论结束-->
+<!-->信息显示开始-->
+<view class="information" wx:for="{{information}}">
+  <van-panel title="{{item.title}}" desc="{{item.desc}}" status="{{item.time}}">
+    <view class="detail">
+      <view class="time">
+        <label>丢失/捡到时间:</label>
+        <label>{{item.time}}</label>
+      </view>
+      <view class="locate">
+        <label>丢失/捡到地点:</label>
+        <label>{{item.locate}}</label>
+      </view>
+      <view class="name">
+        <label>失主姓名:</label>
+        <label>{{item.name}}</label>
+      </view>
+      <view class="id">
+        <label>失主学号:</label>
+        <label>{{item.id}}</label>
+      </view>
+      <view class="academy" style="margin-bottom:25rpx">
+        <label>失主学院:</label>
+        <label>{{item.academy}}</label>
+      </view>
+    </view>
+  </van-panel>
+</view>
+<!-->信息显示结束-->
+<!--大图展示开始-->
+<view class="img_show">
+  <view wx:for="{{swiperlist}}">
+    <image src="{{item.image_src}}" mode="widthFix"></image>
+  </view>
+</view>
+<!--大图展示结束-->
+<!--评论区开始-->
+<form>
+  <view class="other" bindtouchmove="hidden">
+    <label>评论区:
+    </label>
+    <textarea placeholder='(我要评论!!!)'></textarea>
+  </view>
+  <view class="pinlun">
+    <button size="mini">评论</button>
+  </view>
+</form>
+<view class="user_option">
+  <view class="uesr" wx:for="{{user_option}}" class="infor">
+    <image src="{{item.src}}" mode="scaleToFill"></image>
+    <view class="name_time">
+      <text>{{item.name}}</text>
+      <text>{{item.time}}</text>
+      <text style="padding-left:30rpx;margin-top:10rpx;margin-bottom:10rpx;">{{item.detail}}</text>
+    </view>
+  </view>
+    <view class="tip">
+      <text>评论已加载完毕</text>
+    </view>
+</view>
+<!--评论区结束-->

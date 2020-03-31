@@ -1,0 +1,22 @@
+{
+  "pages": [
+    "pages/lostIndex/index",
+    "pages/logs/index",
+    "pages/show_information/index",
+    "pages/authentication/index",
+    "pages/history/index",
+    "pages/detail/index",
+    "pages/findIndex/index",
+    "pages/user_option/user_option",
+    "pages/publish/index",
+    "component/tabber/index",
+    "pages/modifi_informations/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "失物招领",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}
